@@ -1,5 +1,5 @@
 *
 !*.tex
 !Makefile
-!src/*
+!src
 !.gitignore
