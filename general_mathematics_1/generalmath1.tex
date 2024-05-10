@@ -1,0 +1,46 @@
+\documentclass[a4paper,12pt,twocolumn]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex, hidelinks,
+            pdftitle={General Mathematics Booklet},
+            pdfauthor={Alireza Arzejhar},
+            pdfsubject={Mathematics},
+            pdfkeywords={math}]{hyperref}
+
+\usepackage{bm}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{booktabs}
+\usepackage{mathtools}
+\usepackage{blindtext}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{courier}
+\usepackage{acronym}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{siunitx}
+\usepackage{algorithm}
+\usepackage{newpxtext, newpxmath}
+\usepackage[capitalize, noabbrev]{cleveref}
+\usepackage[activate={true, nocompatibility}, final,
+            tracking=true, kerning=true, spacing=true,
+            factor=1100, stretch=10, shrink=10]{microtype}
+
+\title{Hassan Khosravi's Booklet}
+\author{{\textbf{Alireza Arzehgar}} \\
+        {\href{mailto:alirezaarzehgar82@gmail.com}
+        {\texttt{<alirezaarzehgar82@gmail.com>}}} \\
+        {Islamic Azad University, Mashhad}}
+
+\begin{document}
+\frontmatter
+\input{sections/front.tex}
+
+\mainmatter
+\input{sections/limit.tex}
+\input{sections/derivative.tex}
+\input{sections/integral.tex}
+
+\end{document}
