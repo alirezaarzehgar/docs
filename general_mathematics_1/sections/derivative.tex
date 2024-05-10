@@ -1,1 +1,26 @@
 \chapter{Derivative}
+\section{Definition}
+Derivative limit definition:
+\begin{align*}
+\frac{df}{dx} &= f'(x) \\
+f'(x_0) &= \lim_{x\to x_0} \frac{f(x) - f(x_0)}{x-x_0} \\
+f'(x) &= \lim_{h\to 0} \frac{f(x+h) - f(x)}{h} \\
+\end{align*}
+
+Proof of the Derivative of Constant: $\frac{df}{dx}(c)$
+\begin{align*}
+f(x)&=c \\
+f'(x) &= \lim_{h\to 0}\frac{f(x+h) - f(x)}{h} \\
+&= \lim_{h\to 0}\frac{c - c}{h} \\
+&= \lim_{h\to 0} 0 = 0
+\end{align*}
+
+\section{Common formulas}
+\label{1}
+\[ (y = c)\to y'= 0 \]
+
+Example:
+\[ (\sqrt{2})' = (\frac{3}{2})' = (\sin^{-1}\frac{1}{10})' = 0 \]
+
+Note: $(\sin\infty)'$ does not exists.\footnote{\href{https://math.stackexchange.com/questions/635135/infinite-derivatives-of-a-trigonometric-function}{https://math.stackexchange.com/questions/635135/infinite-derivatives-of-a-trigonometric-function}}
+
