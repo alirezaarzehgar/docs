@@ -5,3 +5,6 @@ all: ${PDF_FILES}
 
 %.pdf: %.tex
 	pdflatex $<
+
+clear:
+	rm -rf *.log *.aux *.pdf *.toc

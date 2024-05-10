@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+
+\begin{document}
+Simple derivative formula is: $(aU^n)' = na U^{n-1} U'$
+
+\begin{align*}
+	Q_{n,0} &= 1   \quad Q_{0,k} = [k=0];  \\
+	Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{for $n$, $k>0$.}
+\end{align*}
+
+List of formulas:
+\begin{align*}
+(\sin U)' &= U' \cos U \\
+(\cos U)' &= -U' \sin U \\
+(\tan U)' &= U'(1+\tan^2 U) \\
+f(x) &= \lim_{x\to\inf} \frac{x^2 + \sqrt[3]{3x^2}}{x-1} \\
+\end{align*}
+
+\begin{align*}
+f'(x) &= [-3]' && \text{SPE} \eqref{eq:spe} \\
+f'(x) &= 0 && \text{DC} \eqref{eq:dc1}
+\end{align*}
+
+\end{document}
