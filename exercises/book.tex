@@ -1,0 +1,26 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage{fontenc}
+\usepackage{listings}
+
+\begin{document}
+\tableofcontents
+\newpage
+
+\chapter{Install \LaTeX}
+
+\begin{lstlisting}
+pacman -Syy
+pacman -S texlive
+\end{lstlisting}
+
+\chapter{Using \LaTeX}
+
+Create tex files
+
+\chapter{Compile \LaTeX}
+
+\begin{lstlisting}
+pdflatex filename.tex
+\end{lstlisting}
+
+\end{document}
