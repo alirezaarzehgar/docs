@@ -10,8 +10,8 @@ view: $(name).pdf
 
 $(name).pdf: $(name).tex $(sections)
 	mkdir -p build
-	pdflatex -output-directory build/ $(name)
-	pdflatex -output-directory build/ $(name)
+	xelatex -output-directory build/ $(name)
+	xelatex -output-directory build/ $(name)
 	mv build/$(name).pdf .
 
 polyglot: polyglot/$(name).pdf

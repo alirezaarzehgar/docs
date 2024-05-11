@@ -1,12 +1,6 @@
 \documentclass[a4paper,12pt]{book}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[pdftex, hidelinks,
-            pdftitle={General Mathematics Booklet},
-            pdfauthor={Alireza Arzejhar},
-            pdfsubject={Mathematics},
-            pdfkeywords={math}]{hyperref}
-
 \usepackage{bm}
 \usepackage{caption}
 \usepackage{listings}
@@ -19,21 +13,41 @@
 \usepackage{courier}
 \usepackage{acronym}
 \usepackage{amssymb}
-\usepackage{amsthm}
 \usepackage{siunitx}
 \usepackage{algorithm}
+\usepackage{amsthm}
 \usepackage{multicol}
 \usepackage{newpxtext, newpxmath}
-\usepackage[capitalize, noabbrev]{cleveref}
-\usepackage[activate={true, nocompatibility}, final,
-            tracking=true, kerning=true, spacing=true,
-            factor=1100, stretch=10, shrink=10]{microtype}
+% \usepackage[activate={true, nocompatibility}, final,
+% tracking=true, kerning=true, spacing=true,
+% factor=1100, stretch=10, shrink=10]{microtype}
+\usepackage[
+        left=0.50in,
+            right=0.50in,
+            top=1.0in,
+            bottom=1.0in,
+            paperheight=11in,
+            paperwidth=8.5in
+]{geometry}
 
 \title{Hassan Khosravi's Booklet}
 \author{{\textbf{Alireza Arzehgar}} \\
-        {\href{mailto:alirezaarzehgar82@gmail.com}
+{\href{mailto:alirezaarzehgar82@gmail.com}
         {\texttt{<alirezaarzehgar82@gmail.com>}}} \\
         {Islamic Azad University, Mashhad}}
+
+% \usepackage[pdftex, hidelinks,
+%         pdftitle={General Mathematics Booklet},
+%         pdfauthor={Alireza Arzejhar},
+%         pdfsubject={Mathematics},
+%         pdfkeywords={math}]{hyperref}
+\usepackage{hyperref}
+\usepackage[capitalize, noabbrev]{cleveref}
+
+% \usepackage[xindy,acronym,nonumberlist=true]{glossaries}
+
+\usepackage{xepersian}
+\settextfont{Vazir}        
 
 \begin{document}
 \frontmatter
