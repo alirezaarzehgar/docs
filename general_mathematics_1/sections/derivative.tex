@@ -1,13 +1,13 @@
-\chapter{Derivative}
-\section{Definition}
-Derivative limit definition:
+\section{مشتق}
+\subsection{تعریف}
+تعریف حدی مشتق:
 \begin{align*}
 &\frac{df}{dx} = f'(x) \\
 &f'(x_0) = \lim_{x\to x_0} \frac{f(x) - f(x_0)}{x-x_0} \\
 &f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h} \\
 \end{align*}
 
-Proof of the Derivative of Constant: $\frac{df}{dx}(c)$
+اثبات فرمول مشتق عدد ثابت: $\frac{df}{dx}(c)$
 \begin{align*}
 f(x) &= c \\
 f'(x) &= \lim_{h\to 0}\frac{f(x+h) - f(x)}{h} \\
@@ -15,21 +15,21 @@ f'(x) &= \lim_{h\to 0}\frac{f(x+h) - f(x)}{h} \\
 &= \lim_{h\to 0} 0 = 0
 \end{align*}
 
-\section{Common formulas}
-\subsection{1}
+\subsection{فرمول های متعارف}
+\subsubsection{$y'$}
 \[ (y = c)\to y'= 0 \]
 
-Example:
+مثال:
 \[ (\sqrt{2})' = (\frac{3}{2})' = (\sin^{-1}\frac{1}{10})' = 0 \]
 
 Note: $(\sin\infty)'$ does not exists.\footnote{\href{https://math.stackexchange.com/questions/635135/infinite-derivatives-of-a-trigonometric-function}{https://math.stackexchange.com/questions/635135/infinite-derivatives-of-a-trigonometric-function}}
 
-\subsection{2}
+\subsubsection{$(ax^n)'$}
 \[ (ax^n)' = a(x^n)' = anx^{n-1} \]
 
 Note: The $n$ coefficient have no effect on derivative.
 
-Examples:
+مثال:s:
 \begin{align*}
 &(3x^7)' = 21x^6 \\
 &(2x^{-9})' = -18x^{-10} \\
@@ -39,16 +39,16 @@ Examples:
 	\frac{17}{7} x^{\frac{10}{7}} \\
 \end{align*}
 
-\subsection{3}
+\subsubsection{$(u \pm v)'$}
 \[ (u \pm v)' = u' \pm v' \]
 
-Example:
+مثال:
 \[ (z + 1)' = (z)' + (1)' = 1 + 0 = 1 \]
 
-\subsection{4}
+\subsubsection{$(uv)'$}
 \[ (uv)' = u'v + uv' \]
 
-Example:
+مثال:
 \begin{align*}
 (\underset{u}{x}\underset{v}{\sin x})' = u'v + uv' = 
 \left\lbrace
@@ -59,13 +59,13 @@ Example:
 \right.
 \end{align*}
 
-\subsection{5}
+\subsubsection{$(au^n)'$}
 \[ (au^n)' = a(u^n)' = anu^{n-1}u' \]
 
-Example:
+مثال:
 \[ (3(x^2-x^{-2}+\sqrt{3})^{10})' = anu^{n-1}u' = 3(u^9u') \to u' = 2x +2x^{-3} + 0 \]
 
-Example for derivation with radical:
+مثال: for derivation with radical:
 \begin{align*}
 (3\sqrt[7]{(x^{-3}+\frac{1}{x})^2})' &= anu^{n-1}u' \\
 &= 3(\underbrace{(x^{-3}+\frac{1}{x})^2}_u)^{\frac{2}{7}} \to \\
@@ -80,10 +80,10 @@ u' &= x^{-3}\times\frac{1}{x} =
 \right.
 \end{align*}
 
-\subsection{6}
+\subsubsection{$(\frac{u}{v})'$}
 \[ (\frac{u}{v})' = \frac{u'v - uv'}{v^2} \to (\frac{1}{x})' = \frac{-1}{x^2} \]
 
-Example:
+مثال:
 \begin{align*}
 (\frac{\overbrace{1-2x^{-7}}^u}{\underbrace{2x^3-\frac{2}{\sqrt{3}}}_v})' = \frac{u'v - uv'}{v^2} \to
 \left\lbrace
@@ -94,89 +94,89 @@ Example:
 \right.
 \end{align*}
 
-\subsection{7}
+\subsubsection{$(\sqrt{u})'$}
 \[ (\sqrt{u})' = \frac{u'}{2\sqrt{u}} \to (\sqrt{x})' = \frac{1}{2\sqrt{x}} \]
 
-Example:
+مثال:
 \begin{align*}
 &(\sqrt{\underbrace{x^2-x+x^{-4}}_u})' = \frac{u'}{2\sqrt{u}} \\
 &u' = 2z-1-4x^{-5}
 \end{align*}
 
-\subsection{16}
+\subsubsection{$(\ln u)'$}
 \[ (\ln u)' = \frac{u'}{u} \to (\ln x)' = \frac{1}{x} \]
 
-\subsection{17}
+\subsubsection{$(a^u)'$}
 \[ (a^u)' \overset{a>0}{\longrightarrow} u'a^u\ln a \to (a^x)' = a^x\ln a \]
 
-\subsection{18}
+\subsubsection{$(e^u)'$}
 \[ (e^u)' = u'e^u\ln e = u'e^u \to (e^{ax+b})' = ae^{ax+b} \]
 
-\subsection{19}
+\subsubsection{$(u^v)'$}
 \[ (u^v)' \overset{u>0}{\longrightarrow} u^v(v'\ln u+\frac{u'v}{u}) \to (x^x)' = (1 + \ln x) \]
 
 % Explain Ln and log
 
-\section{Trigonometric derivatives}
-\subsection{21}
+\subsection{مشتق توابع مثلثاتی}
+\subsubsection{$(\sin u)'$}
 \[ (\sin u)' = u'\cos u \longrightarrow (sin(ax+b))' = a \cos(ax+b) \longrightarrow (\sin x)' = \cos x \]
 
-Example:
+مثال:
 \[ (\sin(\ln x))' = (\sin u)' = u'cosu \to u' = \frac{1}{x}\]
 
-\subsection{22}
+\subsubsection{$(\cos u)'$}
 \begin{align*}
 &(\cos u)' = -u'\sin u \longrightarrow (cos(ax+b))' = -a\sin(ax+b) \to (\cos x)' = -\sin x \\
 &(\cos^n x) = (\cos x)^n \\
 \end{align*}
 
-Example:
+مثال:
 \[ ((\cos x)^3)' = (u^3)' = 3u^2u' \to u' = -\sin x \]
 
-\subsection{23}
+\subsubsection{$(\tan u)'$}
 \[ (\tan u)' = u'(1+\tan^2u) = u'\sec^2u \to (\tan x)' = 1+\tan^2 x = \sec^2 x \]
 
-\subsection{24}
+\subsubsection{$(\cot u)'$}
 \[ (\cot u)' = -u'(1+\cot^2u) = -u'\csc^2u \to (\cot x)' = -(1+\cot^2x) = -\csc^2x \]
 
-\subsection{25}
+\subsubsection{$(\sec u)'$}
 \[ (\sec u)' = u'.\sec u.\tan u \to (sec x)' = x'\sec x.\tan x \]
 
-Example:
+مثال:
 \[ (\sec(\csc x))' = (\sec u)' = u'\sec u\tan u \to u' = -\cot x \csc x \]
 
 
-\subsection{26}
+\subsubsection{$(csc u)'$}
 \[ (csc u)' = -u'.\csc u.\cot u \to (\csc x)' = -\cot x.\csc x \]
 
 % Explain trigonometrics
 
-\section{Inverse trigonometric derivative}
-\subsection{31}
+\subsection{مشتق توابع معکوس مثلثاتی}
+\subsubsection{$(\sin^{-1} u)'$}
 \[ (\sin^{-1} u)' = \frac{u'}{\sqrt{1-u^2}} \to (\sin^{-1}x)' = \frac{1}{\sqrt{1-x^2}} \]
 
-\subsection{32}
+\subsubsection{$(\cos^{-1} u)'$}
 \[ (\cos^{-1} u)' = \frac{-u'}{\sqrt{1-u^2}} \to (\cos^{-1}x)' = \frac{-1}{\sqrt{1-x^2}} \]
 
-\subsection{33}
+\subsubsection{$(\tan^{-1} u)'$}
 \[ (\tan^{-1} u)' = \frac{u'}{1+u^2} \to (\tan^{-1}x)' = \frac{1}{1+x^2} \]
 
-\subsection{34}
+\subsubsection{$(\cot^{-1} u)'$}
 \[ (\cot^{-1} u)' = \frac{-u'}{1+u^2} \to (\cot^{-1}x)' = \frac{-1}{1+x^2} \]
 
-\subsection{35}
+\subsubsection{$(\sec^{-1}u)'$}
 \[ (\sec^{-1}u)' = \frac{u'}{u\sqrt{u^2-1}} \to (\sec^{-1}x)' = \frac{1}{x\sqrt{x^2-1}} \]
 
-\subsection{36}
+\subsubsection{$(\csc^{-1}u)'$}
 \[ (\csc^{-1}u)' = \frac{-u'}{u\sqrt{u^2-1}} \to (\csc^{-1}x)' = \frac{-1}{x\sqrt{x^2-1}} \]
 
 % Inverse trigonometric functions
 
-\section{Hyperbolic derivative}
-\subsection{45}
+\subsection{مشتق توابع هایپربولیک}
+\subsubsection{$(\sinh u)'$}
 \[ (\sinh u)' = u'\cosh u \to (\sinh(ax+b))' = a\cosh(ax+b) \to (\sinh x)' = \cosh x \]
 
-\subsection{46}
+\subsubsection{$(\cosh u)'$}
 \[ (\cosh u)' = u'\sinh u \to (\cosh(ax+b))' = a\sinh(ax+b) \to (\cosh x)' = \sinh x \]
 
 % ...
