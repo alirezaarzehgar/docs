@@ -20,9 +20,9 @@ f'(x) &= \lim_{h\to 0}\frac{f(x+h) - f(x)}{h} \\
 \[ (y = c)\to y'= 0 \]
 
 مثال:
-\[ (\sqrt{2})' = (\frac{3}{2})' = (\sin^{-1}\frac{1}{10})' = 0 \]
+\[ (\sqrt{2})' = (\frac{3}{2})' = (sin^{-1}\frac{1}{10})' = 0 \]
 
-Note: $(\sin\infty)'$ does not exists.\footnote{\href{https://math.stackexchange.com/questions/635135/infinite-derivatives-of-a-trigonometric-function}{https://math.stackexchange.com/questions/635135/infinite-derivatives-of-a-trigonometric-function}}
+Note: $(sin\infty)'$ does not exists.\footnote{\href{https://math.stackexchange.com/questions/635135/infinite-derivatives-of-a-trigonometric-function}{https://math.stackexchange.com/questions/635135/infinite-derivatives-of-a-trigonometric-function}}
 
 \subsubsection{$(ax^n)'$}
 \[ (ax^n)' = a(x^n)' = anx^{n-1} \]
@@ -50,11 +50,11 @@ Note: The $n$ coefficient have no effect on derivative.
 
 مثال:
 \begin{align*}
-(\underset{u}{x}\underset{v}{\sin x})' = u'v + uv' = 
+(\underset{u}{x}\underset{v}{sin x})' = u'v + uv' = 
 \left\lbrace
 \begin{array}{r@{}l}
 	u' &= 1 \\
-	v' &= \cos x
+	v' &= cos x
 \end{array}
 \right.
 \end{align*}
@@ -118,65 +118,65 @@ u' &= x^{-3}\times\frac{1}{x} =
 % Explain Ln and log
 
 \subsection{مشتق توابع مثلثاتی}
-\subsubsection{$(\sin u)'$}
-\[ (\sin u)' = u'\cos u \longrightarrow (sin(ax+b))' = a \cos(ax+b) \longrightarrow (\sin x)' = \cos x \]
+\subsubsection{$(sin u)'$}
+\[ (sin u)' = u'cos u \longrightarrow (sin(ax+b))' = a cos(ax+b) \longrightarrow (sin x)' = cos x \]
 
 مثال:
-\[ (\sin(\ln x))' = (\sin u)' = u'cosu \to u' = \frac{1}{x}\]
+\[ (sin(\ln x))' = (sin u)' = u'cosu \to u' = \frac{1}{x}\]
 
-\subsubsection{$(\cos u)'$}
+\subsubsection{$(cos u)'$}
 \begin{align*}
-&(\cos u)' = -u'\sin u \longrightarrow (cos(ax+b))' = -a\sin(ax+b) \to (\cos x)' = -\sin x \\
-&(\cos^n x) = (\cos x)^n \\
+&(cos u)' = -u'sin u \longrightarrow (cos(ax+b))' = -asin(ax+b) \to (cos x)' = -sin x \\
+&(cos^n x) = (cos x)^n \\
 \end{align*}
 
 مثال:
-\[ ((\cos x)^3)' = (u^3)' = 3u^2u' \to u' = -\sin x \]
+\[ ((cos x)^3)' = (u^3)' = 3u^2u' \to u' = -sin x \]
 
-\subsubsection{$(\tan u)'$}
-\[ (\tan u)' = u'(1+\tan^2u) = u'\sec^2u \to (\tan x)' = 1+\tan^2 x = \sec^2 x \]
+\subsubsection{$(tan u)'$}
+\[ (tan u)' = u'(1+tan^2u) = u'sec^2u \to (tan x)' = 1+tan^2 x = sec^2 x \]
 
-\subsubsection{$(\cot u)'$}
-\[ (\cot u)' = -u'(1+\cot^2u) = -u'\csc^2u \to (\cot x)' = -(1+\cot^2x) = -\csc^2x \]
+\subsubsection{$(cot u)'$}
+\[ (cot u)' = -u'(1+cot^2u) = -u'csc^2u \to (cot x)' = -(1+cot^2x) = -csc^2x \]
 
-\subsubsection{$(\sec u)'$}
-\[ (\sec u)' = u'.\sec u.\tan u \to (sec x)' = x'\sec x.\tan x \]
+\subsubsection{$(sec u)'$}
+\[ (sec u)' = u'.sec u.tan u \to (sec x)' = x'sec x.tan x \]
 
 مثال:
-\[ (\sec(\csc x))' = (\sec u)' = u'\sec u\tan u \to u' = -\cot x \csc x \]
+\[ (sec(csc x))' = (sec u)' = u'sec utan u \to u' = -cot x csc x \]
 
 
 \subsubsection{$(csc u)'$}
-\[ (csc u)' = -u'.\csc u.\cot u \to (\csc x)' = -\cot x.\csc x \]
+\[ (csc u)' = -u'.csc u.cot u \to (csc x)' = -cot x.csc x \]
 
 % Explain trigonometrics
 
 \subsection{مشتق توابع معکوس مثلثاتی}
-\subsubsection{$(\sin^{-1} u)'$}
-\[ (\sin^{-1} u)' = \frac{u'}{\sqrt{1-u^2}} \to (\sin^{-1}x)' = \frac{1}{\sqrt{1-x^2}} \]
+\subsubsection{$(sin^{-1} u)'$}
+\[ (sin^{-1} u)' = \frac{u'}{\sqrt{1-u^2}} \to (sin^{-1}x)' = \frac{1}{\sqrt{1-x^2}} \]
 
-\subsubsection{$(\cos^{-1} u)'$}
-\[ (\cos^{-1} u)' = \frac{-u'}{\sqrt{1-u^2}} \to (\cos^{-1}x)' = \frac{-1}{\sqrt{1-x^2}} \]
+\subsubsection{$(cos^{-1} u)'$}
+\[ (cos^{-1} u)' = \frac{-u'}{\sqrt{1-u^2}} \to (cos^{-1}x)' = \frac{-1}{\sqrt{1-x^2}} \]
 
-\subsubsection{$(\tan^{-1} u)'$}
-\[ (\tan^{-1} u)' = \frac{u'}{1+u^2} \to (\tan^{-1}x)' = \frac{1}{1+x^2} \]
+\subsubsection{$(tan^{-1} u)'$}
+\[ (tan^{-1} u)' = \frac{u'}{1+u^2} \to (tan^{-1}x)' = \frac{1}{1+x^2} \]
 
-\subsubsection{$(\cot^{-1} u)'$}
-\[ (\cot^{-1} u)' = \frac{-u'}{1+u^2} \to (\cot^{-1}x)' = \frac{-1}{1+x^2} \]
+\subsubsection{$(cot^{-1} u)'$}
+\[ (cot^{-1} u)' = \frac{-u'}{1+u^2} \to (cot^{-1}x)' = \frac{-1}{1+x^2} \]
 
-\subsubsection{$(\sec^{-1}u)'$}
-\[ (\sec^{-1}u)' = \frac{u'}{u\sqrt{u^2-1}} \to (\sec^{-1}x)' = \frac{1}{x\sqrt{x^2-1}} \]
+\subsubsection{$(sec^{-1}u)'$}
+\[ (sec^{-1}u)' = \frac{u'}{u\sqrt{u^2-1}} \to (sec^{-1}x)' = \frac{1}{x\sqrt{x^2-1}} \]
 
-\subsubsection{$(\csc^{-1}u)'$}
-\[ (\csc^{-1}u)' = \frac{-u'}{u\sqrt{u^2-1}} \to (\csc^{-1}x)' = \frac{-1}{x\sqrt{x^2-1}} \]
+\subsubsection{$(csc^{-1}u)'$}
+\[ (csc^{-1}u)' = \frac{-u'}{u\sqrt{u^2-1}} \to (csc^{-1}x)' = \frac{-1}{x\sqrt{x^2-1}} \]
 
 % Inverse trigonometric functions
 
 \subsection{مشتق توابع هایپربولیک}
-\subsubsection{$(\sinh u)'$}
-\[ (\sinh u)' = u'\cosh u \to (\sinh(ax+b))' = a\cosh(ax+b) \to (\sinh x)' = \cosh x \]
+\subsubsection{$(sinh u)'$}
+\[ (sinh u)' = u'cosh u \to (sinh(ax+b))' = acosh(ax+b) \to (sinh x)' = cosh x \]
 
-\subsubsection{$(\cosh u)'$}
-\[ (\cosh u)' = u'\sinh u \to (\cosh(ax+b))' = a\sinh(ax+b) \to (\cosh x)' = \sinh x \]
+\subsubsection{$(cosh u)'$}
+\[ (cosh u)' = u'sinh u \to (cosh(ax+b))' = asinh(ax+b) \to (cosh x)' = sinh x \]
 
 % ...
