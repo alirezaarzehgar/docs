@@ -1,0 +1,48 @@
+\section{حد های نمایی}
+
+برای حل حدود نمایی از فرمول های $\ln$ باید استفاده بکنیم.
+
+
+\begin{tikzpicture}
+	\begin{axis}[gstyle]
+		\addplot [name path=lb, color=blue, domain=0.001:5]{ln(x)} node{};
+		\addplot [color=red, domain=-5:5]{e^x} node{};
+	\end{axis}
+\end{tikzpicture}
+
+تابع $ln$ همان طور که در نمودار مشخص است معکوس تابع نمایی $e^x$ است. این تابع در $x > 0$ تعریف می‌شود.
+
+مقادیر معروف $ln$:
+\begin{align*}
+&\ln 0 = -\infty \\
+&\ln 1 = 0 \\
+&\ln e = 1 \\
+&\ln \infty = \infty \\
+\end{align*}
+
+با استفاده از تابه $ln$ می‌توانیم توابع نمایی را به ضرب تبدیل کنیم. داریم $\ln f^g = g\ln f$ و $e^{\ln u} = u$.
+با استفاده از این دو فرمول برخی از حدود مبهم رفع ابهام می‌شوند. مثال می‌زنیم:
+
+مثال ۱:
+\begin{align*}
+&\lim_{x\to 0} (1 + \sqrt{x})^{\frac{\sin\sqrt{x}}{x}} = 1^{\infty} \to \\
+&\lim_{x\to 0} \ln (1 + \sqrt{x})^{\frac{\sin\sqrt{x}}{x}} = \ln A \to \\
+&\lim_{x\to 0} {\frac{\sin\sqrt{x}}{x}} \times \ln(1 + \sqrt{x}) = \ln A \to \\
+&\lim_{x\to 0} {\frac{\sin\sqrt{x}}{x}} \times \lim_{x\to 0} \ln(1 + \sqrt{x}) = \ln A \to \\
+&\lim_{x\to 0} {\frac{\sin\sqrt{x}}{x}} = 1 \quad \lim_{x\to 0} \ln(1 + \sqrt{x}) = 0 \to \\
+&\lim_{x\to 0} 1 \times 0 = \ln A \\
+&ln A = 0 \to A = e^0 = 1
+\end{align*}
+
+زمانی که به $x$ مقدار صفر را می‌دهیم، جواب حد مبهم می‌شود و نیاز به رفع ابهام خواهد داشت.
+جواب حد را $A$ در نظر می‌گیریم و از عبارت $ln$ میگیریم. حال هر دو طرف $ln$ دارند و می‌توانیم از فرمول $\ln f^g = g\ln f$ استفاده کنیم و توان را به ضرب تبدیل کنیم.
+بعد از تبدیل به ضرب، حد را حل کرده و بر اساس فرمول $e^{\ln u} = u$ جواب نهایی را بدست می‌آوریم.
+
+در مثال بالا از قاعده هوپیتال استفاده نکردیم. اما درحالتی که باز هم جواب حد مبهم باشد، با همین الگوریتم از هوپیتال استفاده خواهیم کرد.
+
+مثال ۱:
+
+
+\begin{align*}
+\lim_{x\to\infty} \frac{1+x}{2+x}^{\frac{1-\sqrt{x}}{1-x}}
+\end{align*}

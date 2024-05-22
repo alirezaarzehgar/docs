@@ -19,6 +19,23 @@
 \usepackage{caption, float}
 \usepackage{subcaption}
 \usepackage{titlesec}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+    \usetikzlibrary{intersections}
+    % create a custom style to store common `axis' options
+    \pgfplotsset{
+        gstyle/.style={
+            xmin=-5,
+            xmax=5,
+            ymin=-5,
+            ymax=5,
+            xtick distance=1,
+            ytick distance=1,
+            axis lines=center,
+        },
+    }
+
 \usepackage{hyperref}
 % \hypersetup{colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, plainpages=false, pdfpagelabels=true, urlcolor=blue}
 \usepackage[all]{hypcap}
@@ -45,6 +62,8 @@
 \input{sections/limit.tex}
 \input{sections/derivative.tex}
 \input{sections/derivative_cheatsheet.tex}
+\input{sections/exponent_limit.tex}
 \input{sections/integral.tex}
+\input{sections/integral_cheatsheet.tex}
 
 \end{document}
