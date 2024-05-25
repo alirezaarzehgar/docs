@@ -1,0 +1,16 @@
+LATEX=xelatex
+
+SRCS!=ls *.tex
+OBJS=$(SRCS:.tex=.pdf)
+OBJDIR=.
+
+.PHONY: all clean
+
+all: $(OBJS)
+	echo $(SRCS) $(OBJS)
+
+%.pdf: %.tex
+	$(LATEX) $<
+
+clean:
+	rm -rf *.log *.aux *.out *.pdf .*.swp *.dvi

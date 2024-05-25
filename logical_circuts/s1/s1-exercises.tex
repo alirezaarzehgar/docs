@@ -1,0 +1,50 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[
+        left=0.50in,
+            right=0.50in,
+            top=1.0in,
+            bottom=1.0in,
+            paperheight=11in,
+            paperwidth=8.5in
+]{geometry}
+\usepackage{amsmath, amsthm, tikz}
+\usetikzlibrary{snakes}
+\usepackage{array,mathtools}
+\usepackage{longdivision}
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+\usepackage[extrafootnotefeatures]{xepersian}
+
+\title{تمرینات فصل اول درس مدار منطقی}
+\author{{\textbf{علیرضا ارزه گر}} \\
+{\href{mailto:alirezaarzehgar82@gmail.com}
+        {\texttt{<alirezaarzehgar82@gmail.com>}}} \\
+        {Islamic Azad University, Mashhad}}
+
+\settextfont[
+	Scale=1.09,
+	Extension=.ttf,
+	Path=ttf/,
+	BoldFont=XB NiloofarBd,
+	ItalicFont=XB NiloofarIt,
+	BoldItalicFont=XB NiloofarBdIt
+]{XB Niloofar}
+
+\newcommand{\mup}[3]{#1 \times #2^{#3}}
+\newcommand{\mpo}[2]{#1^{#2}}
+
+\newcommand*{\carry}[1][1]{\overset{#1}}
+\newcolumntype{B}[1]{r*{#1}{@{\,}r}}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\input{questions/q1.tex}
+\input{questions/q2.tex}
+\input{questions/q3.tex}
+\input{questions/q4.tex}
+\input{questions/q5.tex}
+
+\end{document}
