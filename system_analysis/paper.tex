@@ -1,0 +1,85 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[
+        left=0.50in,
+            right=0.50in,
+            top=1.0in,
+            bottom=1.0in,
+            paperheight=11in,
+            paperwidth=8.5in
+]{geometry}
+\usepackage{amsmath, amsthm}
+\usepackage{amssymb}
+\usepackage{verbatim}
+\usepackage[export]{adjustbox}
+\usepackage{pifont}
+\usepackage{array,multirow, rotating}
+\usepackage{enumitem}
+\usepackage{enotez, multicol}
+\usepackage[bottom]{footmisc}
+\usepackage{caption, float}
+\usepackage{subcaption}
+\usepackage{titlesec}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+    \usetikzlibrary{intersections}
+    % create a custom style to store common `axis' options
+    \pgfplotsset{
+        gstyle/.style={
+            xmin=-5,
+            xmax=5,
+            ymin=-5,
+            ymax=5,
+            xtick distance=1,
+            ytick distance=1,
+            axis lines=center,
+        },
+    }
+
+\usepackage{hyperref}
+% \hypersetup{colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, plainpages=false, pdfpagelabels=true, urlcolor=blue}
+\usepackage[all]{hypcap}
+\usepackage[extrafootnotefeatures]{xepersian}
+
+\title{پروژه درس تحلیل و طراحی سیستم}
+\author{{\textbf{علیرضا ارزه گر}} \\
+{\href{mailto:alirezaarzehgar82@gmail.com}
+        {\texttt{<alirezaarzehgar82@gmail.com>}}} \\
+        {Islamic Azad University, Mashhad}\\
+        {مدرس:استاد واحدی}
+}
+
+\settextfont[
+	Scale=1.09,
+	Extension=.ttf,
+	Path=ttf/,
+	BoldFont=XB NiloofarBd,
+	ItalicFont=XB NiloofarIt,
+	BoldItalicFont=XB NiloofarBdIt
+]{XB Niloofar}
+
+\begin{document}
+
+\input{sections/front.tex}
+\input{sections/introduction.tex}
+\input{sections/spiral_methodology.tex}
+\input{sections/set_goals.tex}
+
+\input{sections/risk/risk_management.tex}
+\input{sections/risk/risk_detection.tex}
+\input{sections/risk/risk_analisys.tex}
+\input{sections/risk/find_solution.tex}
+
+\input{sections/deval/dev_and_validation.tex}
+\input{sections/deval/wish_analysis.tex}
+\input{sections/deval/design.tex}
+\input{sections/deval/requirements.tex}
+\input{sections/deval/timing.tex}
+\input{sections/deval/monitoring.tex}
+\input{sections/deval/develop.tex}
+\input{sections/deval/test.tex}
+\input{sections/deval/maintain.tex}
+
+\input{sections/planning.tex}
+
+\end{document}
