@@ -1,0 +1,55 @@
+\documentclass{standalone}
+% \documentclass{article}
+\usepackage{pgfplots}
+\usepackage{animate}
+\usepackage{tikz}
+\usetikzlibrary{lindenmayersystems}
+\pgfdeclarelindenmayersystem{A}{%
+  \symbol{F}{\pgflsystemstep=0.6\pgflsystemstep\pgflsystemdrawforward}
+  \rule{A->F[+A][-A]}
+}
+
+\begin{document}
+\begin{animateinline}[controls,autoplay,loop]{1}
+	\multiframe{12}{r=30+30}{
+		\begin{tikzpicture}[scale=5]
+			\draw[->] (-1.5,0) -- (1.5,0) node[right] {$x$};
+			\draw[->] (0,-1.5) -- (0,1.5) node[above] {$y$};
+			\draw[thick] (0,0) circle [radius=1];
+
+			\draw[blue, ->] (0:0.5) arc [start angle=0, end angle=\r, radius=0.5];
+			\node[blue, right] at (\r/2:0.6) {$\theta$};
+
+			\filldraw[red] (\r:1) circle (1pt) node[above right] {$P$};	
+		\end{tikzpicture}
+	}  
+\end{animateinline}
+
+\newline
+\begin{animateinline}[controls,autoplay,loop]{1}
+	\multiframe{12}{r=30+30}{
+		\begin{tikzpicture}[scale=5]
+			\begin{axis}[
+				xlabel=$x$,
+				ylabel=$y$,
+				xmin=-1,
+				xmax=2*pi+1,
+				ymin=-1.5-1,
+				ymax=1.5+1,
+				width=8cm,
+				height=6cm,
+				axis lines=center,
+				grid=major,
+				xtick={0,1.57,3.14,4.71,6.28},
+				xticklabels={$0$,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$,$2\pi$},
+				ytick={-1,0,1}
+			]
+				\addplot[domain=0:2*pi,samples=100,blue] {sin(deg(x + \r*0.1))};
+				\node[above right] at (axis cs: 1,1) {$f(x) = \sin(\r)$};
+			\end{axis}
+	
+		\end{tikzpicture}
+	}  
+\end{animateinline}
+
+\end{document}
