@@ -41,6 +41,23 @@
 % \hypersetup{colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, plainpages=false, pdfpagelabels=true, urlcolor=blue}
 \usepackage[all]{hypcap}
 \usepackage[extrafootnotefeatures]{xepersian}
+\usepackage{float}
+
+\newcommand{\risktbl}[3]{
+\large #1 \normalsize
+\begin{table}[H]
+\begin{center}
+\caption{احتمال و شدت ریسک}
+\begin{tabular}{|c|c|c|}
+	\hline
+	\textbf{درصد احتمال وقوع} & \textbf{شدت ریسک} \\
+	\hline
+	#2 & #3 \\
+	\hline
+\end{tabular}
+\end{center}
+\end{table}
+}
 
 \title{پروژه درس تحلیل و طراحی سیستم}
 \author{{\textbf{علیرضا ارزه گر}} \\
