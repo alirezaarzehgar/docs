@@ -1,0 +1,9 @@
+// Hello.java
+import javax.swing.JApplet;
+import java.awt.Graphics;
+
+public class Hello extends JApplet {
+^^Ipublic void paintComponent(Graphics g) {
+^^I^^Ig.drawString("Hello, world!", 65, 95);
+^^I}
+}

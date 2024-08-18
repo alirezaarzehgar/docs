@@ -1,0 +1,48 @@
+\documentclass[11pt, oneside]{article}
+\usepackage[a4paper,left=2cm,bottom=2.5cm,right=2cm,top=2.5cm,footskip=1cm]{geometry}
+\usepackage{amsmath, amsthm}
+\usepackage{amssymb}
+\usepackage{verbatim}
+\usepackage[export]{adjustbox}
+% \usepackage{fontspec}
+% \usepackage{fontawesome}
+\usepackage{pifont}
+\usepackage{array,multirow, rotating}
+\usepackage{enumitem}
+\usepackage{enotez, multicol}
+\setlist[enumerate]{nosep, itemsep=3pt}%, topsep=5pt}
+\setlist[itemize]{nosep, itemsep=3pt}%, topsep=5pt}
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\theenumiii}{\arabic{enumiii}}
+\renewcommand{\labelenumiii}{\theenumiii)}
+\usepackage[bottom]{footmisc}
+\usepackage{caption, float}
+\usepackage{subcaption}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, plainpages=false, pdfpagelabels=true, urlcolor=blue}
+\usepackage[all]{hypcap}
+\usepackage[extrafootnotefeatures]{xepersian}
+
+\settextfont[
+	Scale=1.09,
+	Extension=.ttf,
+	Path=fonts/,
+	BoldFont=XB NiloofarBd,
+	ItalicFont=XB NiloofarIt,
+	BoldItalicFont=XB NiloofarBdIt
+]{XB Niloofar}
+
+\begin{document}
+سلام سلام
+\tableofcontents
+
+\section{پیش گفتار}
+
+\input{sections/front.tex}
+
+\input{sections/limit.tex}
+\input{sections/derivative.tex}
+\input{sections/integral.tex}
+
+\end{document}

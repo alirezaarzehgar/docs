@@ -1,0 +1,4 @@
+MAKE := make
+
+all:
+	echo $()

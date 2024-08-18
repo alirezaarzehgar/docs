@@ -1,0 +1,70 @@
+\documentclass[]{article}
+
+\usepackage{minted}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{makeidx}
+\makeindex
+
+\usepackage{xepersian}
+\settextfont{IRAmir}
+
+%opening
+\title{Learning Index}
+\author{Alireza Arzehgar}
+
+\begin{document}
+\maketitle
+
+\index{testind}
+\index{testidx}
+
+من کیرم تو 
+\cite{M1}
+و 
+\cite{M2}
+کیری.
+
+\setLTRbibitems
+\begin{thebibliography}{99}
+\resetlatinfont
+\bibitem{M1}
+I krom to zendeghi 1 and 2
+
+\bibitem{M2}
+Yo yo yo 3 1 ohhh
+
+\end{thebibliography}
+
+%\lstset{language=Java, keywordstyle=\color{red}}
+\begin{latin}
+\begin{minted}{java}
+// Hello.java
+import javax.swing.JApplet;
+import java.awt.Graphics;
+
+public class Hello extends JApplet {
+	public void paintComponent(Graphics g) {
+		g.drawString("Hello, world!", 65, 95);
+	}    
+}
+\end{minted}
+\end{latin}
+
+
+
+%\lstset{language=C, keywordstyle=\color{blue}}
+\begin{latin}
+\begin{lstlisting}{language=c}
+#include <stdio.h>
+
+int main()
+{
+	return 0;
+}
+\end{lstlisting}
+\end{latin}
+
+\printindex
+\end{document}

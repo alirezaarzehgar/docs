@@ -1,0 +1,12 @@
+\begin{theindex}
+  \providecommand*\lettergroupDefault[1]{}
+  \providecommand*\lettergroup[1]{%
+      \par\textbf{#1}\par
+      \nopagebreak
+  }
+
+  \lettergroup{T}
+  \item testidx, \hyperpage{1}
+  \item testind, \hyperpage{1}
+
+\end{theindex}
