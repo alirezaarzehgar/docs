@@ -1,0 +1,18 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{pkg}[2024/08/19 Example pkg]
+
+\RequirePackage{xcolor}
+
+\newcommand{\mycolor}[1]{\textcolor{brown}{#1}}
+\DeclareOption{red}{
+	\renewcommand{\mycolor}[1]{\textcolor{red}{#1}}
+}
+\DeclareOption{blue}{
+	\renewcommand{\mycolor}[1]{\textcolor{blue}{#1}}
+}
+\DeclareOption{yellow}{
+	\renewcommand{\mycolor}[1]{\textcolor{yellow}{#1}}
+}
+\ProcessOptions\relax
+
+\newcommand{\cmd}{\mycolor{Hello \LaTeX package!}}

@@ -1,0 +1,76 @@
+\documentclass{beamer}
+\usefonttheme{professionalfonts}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{xepersian}
+\settextfont{B Yas}
+
+\usetheme{AnnArbor}
+
+\author{\lr{alireza}}
+\title{\lr{How to work with beamer}}
+\institute{\lr{Islamic Azad University}}
+
+%\usecolortheme[named=green]{structure}
+
+\newtheorem{command}{\lr{commands}}
+
+\begin{document}
+	\begin{frame}
+		\maketitle
+	\end{frame}
+	
+	
+	\begin{frame}
+		سلام بچه ها!
+		\begin{itemize}
+			\item یک
+			\pause
+			\item دو
+			\pause
+			\item سه
+			\begin{itemize}
+				\item برو
+				\pause
+				\item خواهر
+				\pause
+				\item ننه
+				\pause
+				\item کسده
+			\end{itemize}
+		\end{itemize}
+		
+		\begin{latin}
+		\begin{itemize}
+			\item 1
+			\item 2
+			\item 3
+		\end{itemize}
+		\end{latin}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{\lr{YOhooo}}
+		%\textcolor{blue}{hello}
+		
+		\begin{latin}
+		\[
+		\int_0^1 f(x), \mathrm{d}x
+		\]
+		
+		\alert{highlighted text}
+		\end{latin}
+		
+	\end{frame}
+	
+	\begin{frame}
+		\begin{latin}
+		\begin{command}
+			\begin{lstlisting}{language=shell}
+				cat /path/filename | sed 's///g'
+			\end{lstlisting}
+		\end{command}
+		\end{latin}
+	\end{frame}
+\end{document}
